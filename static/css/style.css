@@ -644,3 +644,42 @@ span {
     font-weight: bold;
     transition: width 1s ease-in-out;
 }
+
+
+/*============ Spinner & Scrollbar styles ============*/
+
+/* bar color */
+#nprogress .bar {
+  background: var(--main-color) !important;
+}
+
+/* spinner color(loading circle) */
+#nprogress .spinner-icon {
+  border-top-color: var(--main-color);
+  border-left-color: var(--main-color);
+}
+
+/* WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px; /* thickness*/
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color); /* bg */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5e117e; /* hover */
+}
+
+/* for Firefox */
+* {
+  scrollbar-width: thick;
+  scrollbar-color: var(--main-color) var(--bg-color);
+}

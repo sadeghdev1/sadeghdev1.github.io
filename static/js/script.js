@@ -1,4 +1,4 @@
-/*================Scroll Sections Active Link=================*/
+/*================ Scroll Sections Active Link =================*/
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
 let menuIcon = document.querySelector('#menuIcon');
@@ -19,7 +19,7 @@ function scrollHandler() {
         };
     });
 
-    /*=====================sticky navbar=======================*/
+    /*===================== sticky navbar =======================*/
     let header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 600);
 
@@ -33,7 +33,7 @@ window.onscroll = scrollHandler;
 window.onload = scrollHandler;
 
 
-/*=====================Scroll Reveal=======================*/
+/*===================== Scroll Reveal =======================*/
 ScrollReveal({
     // reset: true,
     distance: '80px',
@@ -47,7 +47,7 @@ ScrollReveal().reveal('.home-img, .services-container, portfolio-box, .contact f
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-/*=====================typed js=======================*/
+/*===================== typed js =======================*/
 const typed = new Typed('.multiple-text', {
     strings: ['Frontend Developer', 'Web Developer', 'Programmer'],
     typeSpeed: 100,
@@ -56,7 +56,7 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
-/*================Toggle Icon Navbar=================*/
+/*================ Toggle Icon Navbar =================*/
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
@@ -100,3 +100,14 @@ document.addEventListener("DOMContentLoaded", checkHeader);
 
 // second check after any scroll
 window.addEventListener("scroll", checkHeader);
+
+
+//================= NProgress ====================//
+
+// when loading...
+NProgress.start();
+
+// when loading is complete
+window.addEventListener("load", () => {
+  NProgress.done();
+});
