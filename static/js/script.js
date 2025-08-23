@@ -28,10 +28,8 @@ function scrollHandler() {
     navbar.classList.remove('active');
 };
 
-// اجرا روی اسکرول
 window.onscroll = scrollHandler;
 
-// اجرا موقع لود شدن
 window.onload = scrollHandler;
 
 
@@ -102,21 +100,3 @@ document.addEventListener("DOMContentLoaded", checkHeader);
 
 // second check after any scroll
 window.addEventListener("scroll", checkHeader);
-
-
-// document.addEventListener("DOMContentLoaded", function(){
-//     const form = document.getElementById('contact-form');
-
-//     form.addEventListener('submit', function(e){
-//         e.preventDefault();
-
-//         emailjs.sendForm('service_zlqf869', 'template_3gq3fu8', '#contact-form')
-//         .then(() => {
-//             alert('Thank you! Your message has been sent.');
-//             form.reset();
-//         }, (error) => {
-//             console.error('FAILED...', error);
-//             alert('Oops! Something went wrong.');
-//         });
-//     });
-// });
