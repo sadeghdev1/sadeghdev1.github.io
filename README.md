@@ -17,7 +17,6 @@ This website showcases my **projects**, **skills**, and **contact information**.
 - HTML5
 - CSS3 (Flexbox, Grid, Animations)
 - JavaScript (ES6+)
-- Optional: EmailJS for contact form
 
 ## Live Demo
 
