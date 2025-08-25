@@ -258,7 +258,7 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form id="contact-form">
+        <form id="contact-form" action="https://formsubmit.co/sadeqmail136@gmail.com" method="POST">
             <div class="input-box">
                 <input id="name" name="name" type="text" placeholder="Full Name" required>
                 <input id="email" name="email" type="email" placeholder="Email Address" required>
@@ -268,6 +268,9 @@
                 <input type="text" placeholder="Email Subject">
             </div>
             <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+            <input type="hidden" name="_captcha" value="false">
+
             <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
