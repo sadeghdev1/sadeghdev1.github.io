@@ -62,33 +62,6 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-//=================== Form Handler ====================//
-document.addEventListener("DOMContentLoaded", function(){
-    const form = document.getElementById('contact-form');
-
-    form.addEventListener('submit', function(e) {
-        e.preventDefault(); 
-
-        const formData = new FormData(form);
-
-        fetch(form.action, {
-            method: "POST",
-            body: formData
-        }).then(response => {
-            if (response.ok) {
-                alert("Your message has been sent✅");
-                form.reset();
-            } else {
-                alert("مشکلی پیش اومد ❌");
-            }
-        }).catch(error => {
-            alert("خطا در ارسال فرم ❌");
-            console.error(error);
-        });
-    });
-});
-
-
 //=================== Header Colored ======================//
 const header = document.querySelector(".header");
 const homeSection = document.querySelector(".home");
