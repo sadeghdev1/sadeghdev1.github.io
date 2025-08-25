@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function(){
             alert(`Thank you, ${name}! Your message has been sent to sadeqmail136@gmail.com.`);
             
             // Clear form
-            form.reset();
+            // form.reset();
         });
 });
 
