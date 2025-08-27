@@ -400,7 +400,7 @@ span {
     outline: none;
     border-radius: 1.1rem;
     margin: 0.7rem 0;
-    transition: all 0.4s ease;
+    transition: all .5s ease;
 }
 .contact form .input-box input:focus,
 .contact form textarea:focus {
