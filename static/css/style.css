@@ -405,7 +405,6 @@ span {
 .contact form .input-box input:focus,
 .contact form textarea:focus {
     border-color:var(--main-color);
-    /* box-shadow: 0 0 5px var(--main-color); */
 }
 
 .contact form .input-box input {
@@ -414,8 +413,7 @@ span {
 
 .contact form textarea { resize: vertical; }
 
-.footer
-{
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -426,8 +424,7 @@ span {
 
 .footer-text { font-size: 1.6rem; }
 
-.footer-iconTop a
-{
+.footer-iconTop a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
