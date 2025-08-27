@@ -1,0 +1,42 @@
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #bb0dde;
+}
+
+body {
+    display:grid;
+    place-items:center;
+    height:100vh;
+    margin:0;
+    font-family:system-ui;
+    background-color: var(--second-bg-color);
+}
+
+.card {
+    padding:2rem 2.5rem;
+    border:1px solid #e5e7eb;
+    border-radius:16px;
+    text-align:center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.card h1 {
+    margin:0 0 .5rem;
+}
+.card p {
+    opacity:.8;
+}
+
+a {
+    display:inline-block;
+    margin-top:1rem;
+    text-decoration:none;
+    border:1px solid var(--main-color);
+    padding:.5rem 1rem;border-radius:10px;
+}
+a:hover {
+    background:var(--main-color);
+    color:#fff;
+}
