@@ -10,13 +10,14 @@ This website showcases my **projects**, **skills**, and **contact information**.
 - Interactive sections: About Me, Services, Projects, Contact
 - Smooth scroll navigation
 - Project showcase with screenshots and live links
-- Contact form integrated with EmailJS (or backend server)
+- Contact form integrated with Formsubmit
 
 ## Technologies Used
 
 - HTML5
 - CSS3 (Flexbox, Grid, Animations)
 - JavaScript (ES6+)
+- Formsubmit
 
 ## Live Demo
 
