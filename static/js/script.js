@@ -68,7 +68,7 @@ const homeSection = document.querySelector(".home");
 
 function checkHeader() {
   const homeBottom = homeSection.offsetTop + homeSection.offsetHeight;
-  if (window.scrollY < homeBottom - 650) {
+  if (window.scrollY < homeBottom - 670) {
     // in home : header is transparent
     header.classList.remove("colored");
   } else {
