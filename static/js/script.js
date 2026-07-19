@@ -68,7 +68,7 @@ const homeSection = document.querySelector(".home");
 
 function checkHeader() {
   const homeBottom = homeSection.offsetTop + homeSection.offsetHeight;
-  if (window.scrollY < homeBottom - 677) {
+  if (window.scrollY < homeBottom - 700) {
     // in home : header is transparent
     header.classList.remove("colored");
   } else {
@@ -82,6 +82,16 @@ document.addEventListener("DOMContentLoaded", checkHeader);
 
 // second check after any scroll
 window.addEventListener("scroll", checkHeader);
+
+const trigger = window.innerWidth <= 768 ? 20 : 100;
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > trigger) {
+    header.classList.add("colored");
+  } else {
+    header.classList.remove("colored");
+  }
+});
 
 
 //================= NProgress ====================//
