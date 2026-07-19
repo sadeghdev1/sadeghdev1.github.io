@@ -114,7 +114,7 @@ section {
     /* margin-left: 5rem; */
 }
 .home-image img { 
-    width: 30vw; 
+    width: 30vw;
     border-radius: 50%;
     border: 2px solid var(--main-color);
     box-shadow: 0 0 100px var(--main-color);
